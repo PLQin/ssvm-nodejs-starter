@@ -1,0 +1,38 @@
+## \# 基本概念
+
+-   关于Docker的灵魂三问
+    -   Docker 到底是什么？  
+        Docker 属于 Linux 容器的一种封装，提供简单易用的容器使用接口。  
+    -   要解决什么问题？  
+        （1）提供一次性的环境。比如，本地测试他人的软件、持续集成的时候提供单元测试和构建的环境。  
+        （2）提供弹性的云服务。因为 Docker 容器可以随开随关，很适合动态扩容和缩容。  
+        （3）组建微服务架构。通过多个容器，一台机器可以跑多个服务，因此在本机就可以模拟出微服务架构。  
+    -   好处又在哪里？   
+        （1）启动快  
+        （2）资源占用少  
+        （3）体积小  
+-   docker CE 与 EE的简单区别
+    -   CE( Community Edition)是社区版，简单理解是免费使用，提供小企业与小的IT团队使用,希望从Docker开始，并尝试基于容器的应用程序部署。
+    -   EE(Docker Enterprise Edition)是企业版，收费。提供功能更强。适合大企业与打的IT团队。为企业开发和IT团队设计，他们在生产中构建、交付和运行业务关键应用程序
+
+
+## \# 其他
+
+[windows 中的类似于sudo的命令（在cmd中以另一个用户的身份运行命令）](https://www.cnblogs.com/vanwoos/p/9866352.html)，例如我的Windows用户是Qing，则命令为：  
+```shell
+runas /user:qing cmd.exe
+```
+
+
+## \# 参考
+
+-   [Docker 入门教程 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2018/02/docker-tutorial.html)  
+-   [docker中文社区](https://www.docker.org.cn/index.html)
+-   [Docker命令大全](https://blog.csphere.cn/archives/22)
+-   [Docker中文文档](http://www.dockerinfo.net/document)
+
+
+## \# 最后
+
+
+
