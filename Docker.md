@@ -16,6 +16,16 @@
     -   EE(Docker Enterprise Edition)是企业版，收费。提供功能更强。适合大企业与打的IT团队。为企业开发和IT团队设计，他们在生产中构建、交付和运行业务关键应用程序
 
 
+## \# 部署流程
+
+-   [Windows下载并部署Docker](https://www.runoob.com/docker/windows-docker-install.html)  
+    -   如果是 win7、win8 等需要利用 docker toolbox 来安装，国内可以使用[阿里云的镜像](http://mirrors.aliyun.com/docker-toolbox/windows/docker-toolbox/)来下载
+    -   现在 Docker 有专门的 Win10 专业版系统的安装包，需要 [开启Hyper-V](https://www.runoob.com/docker/windows-docker-install.html)。
+
+
+
+
+
 ## \# 其他
 
 [windows 中的类似于sudo的命令（在cmd中以另一个用户的身份运行命令）](https://www.cnblogs.com/vanwoos/p/9866352.html)，例如我的Windows用户是Qing，则命令为：  
@@ -26,6 +36,7 @@ runas /user:qing cmd.exe
 
 ## \# 参考
 
+-   [Docker国际官网](https://www.docker.com/)
 -   [Docker 入门教程 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2018/02/docker-tutorial.html)  
 -   [docker中文社区](https://www.docker.org.cn/index.html)
 -   [Docker命令大全](https://blog.csphere.cn/archives/22)
