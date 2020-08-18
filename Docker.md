@@ -25,13 +25,15 @@
 
 
 
-
 ## \# 其他
 
-[windows 中的类似于sudo的命令（在cmd中以另一个用户的身份运行命令）](https://www.cnblogs.com/vanwoos/p/9866352.html)，例如我的Windows用户是Qing，则命令为：  
-```shell
-runas /user:qing cmd.exe
-```
+-   [windows 中的类似于sudo的命令（在cmd中以另一个用户的身份运行命令）](https://www.cnblogs.com/vanwoos/p/9866352.html)，例如我的Windows用户是Qing，则命令为：  
+    ```shell
+    runas /user:qing cmd.exe
+    ```
+-   系统提示 `No def ault Boot2Docker IS0 found locally，downloading the latest release`  
+    表示正在下载boot2docker.iso镜像文件，这个速度会非常慢，这时可以先按Ctrl+C取消安装，把boot2docker.iso文件通过迅雷等下载工具下载下来并放到指定目录（C:\Users\zsl-pc.docker\machine\cache\，此目录在不同电脑上会有所不同）下再安装。再次运行create创建Docker虚拟主机时就不会再去远程下载，而是使用本地的iso文件了。可参考：https://www.jianshu.com/p/f8bb86ff7650 。关于 [为什么需要用到boot2docker](https://www.cnblogs.com/52fhy/p/8413029.html)可以大概阅读下。  
+
 
 
 ## \# 参考
