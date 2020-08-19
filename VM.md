@@ -2,15 +2,16 @@
 
 ## \# 日常学习现状:   
 - 准备学习 Rust -> 需要下载一个[虚拟机VMware-player](https://my.vmware.com/cn/web/vmware/downloads/details?downloadGroup=PLAYER-1556&productId=800&rPId=47865)  
-- 准备下载虚拟机 -> 官网速度太慢，需要搞一个可以科学上网的VPN   
+- 准备下载虚拟机 -> 官网速度太慢，需要搞下科学上网  
 - 下载好了虚拟机 -> 还需要下载一个[Ubuntu](https://cn.ubuntu.com/download)  
 - 准备下载Ubuntu -> 下载速度太慢需要再搞一个[BT工具-µTorrent](https://www.utorrent.com/intl/zh_tw/downloads/win)  
 - BT工具没有中文包 -> 需要再下载一个[语言包](https://www.utorrent.com/scripts/dl.php?track=stable&build=43085&client=utorrent)   
 
-下载好虚拟机、Ubuntu并配置好BT工具的语言包后 *<em>（大概只需要2-4个小时）</em>* 你会得到Windows善意的提示： `Error:Mware Workstation and Device/Credential Guard are not compatible.  `
+  下载好虚拟机、Ubuntu并配置好BT工具的语言包后 *<em>（大概只需要2-4个小时）</em>* 你会得到Windows善意的提示： `Error:Mware Workstation and Device/Credential Guard are not compatible.  `
 
-... ...   
-**怒砸键盘.jpg**
+  ... ...   
+  
+  “ *怒砸键盘.jpg* ”
   
   
 ## \# 继续学习现状:    
@@ -18,8 +19,9 @@
 - 寻找解决 Error 的方案
 - VMware 提示: `更新软件时出错: 无法连接更新服务器。请检查您的 Internet 设置或联系您的系统管理员。`
 
-... ...   
-**怒砸CPU.jpg**
+  ... ...   
+  
+  “ *怒砸键盘.jpg* ”
 
 
 
@@ -38,8 +40,11 @@
 
 ## \# 最后
 
-突然发现Win10自带了Hyper-V，可以不使用虚拟机，直接在windows中安装Linux子系统。       
-一天过去了，还没有开始正式学习Rust，不过没关系，我秃了也变强了  
+突然发现Win10自带了Hyper-V，可以[不使用虚拟机，直接在windows中安装Linux子系统](https://cloud.tencent.com/developer/news/448568)...         
+一天过去了都还没有正式开始学习Rust <small>（难受）</small>。
+
+不过没关系! 🐶   
+我秃了 也变强了  
 
 > 终 。。。  
 
