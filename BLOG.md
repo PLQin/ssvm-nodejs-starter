@@ -29,7 +29,7 @@ Rust何其他同类型的语言有什么优势？
 ```shell
 # Install Rust
 # 既然我们要用 Rust 写函数，也需要安装 Rust 语言的编译器与工具。
-# 如果觉得慢，可以使用中科大镜像，使用方法请自行百度
+# 如果觉得慢，可以使用中科大镜像，使用方法请自行搜索
 $ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 $ source $HOME/.cargo/env
 
@@ -53,6 +53,24 @@ $ npm install ssvm
 注意：ssvmup 使用 `wasm-bindgen` 在 JavaScript 和 Rust 源代码之间自动生成“胶水”代码，以便 JavaScript 和 Rust 可以使用各自的本机数据类型进行通信。没有 ssvmup，函数参数和返回值将限于 WebAssembly 本地支持的简单类型（即32位整数）。例如，如果没有 ssvmup 和 wasm-bindgen，则无法使用字符串或数组。
 
 Rust 函数位于 src/lib.rs 文件中，只需在输入字符串前加上“ hello” 即可。注意，say() 函数使用＃[wasm_bindgen]进行了注释，从而使 ssvmup 可以生成必要的“管道”。基于此，我们可以从 TypeScript 调用 Rust 函数。
+
+
+## \# 遇到的问题
+
+Q：异常
+  ```
+  thread 'main' panicked at 'assertion failed: `(left == right)
+  ...
+  thread panicked while panicking. aborting.
+  Illegal instruction (core dumped)
+  ```  
+  关于此异常的讨论：  
+  - [在Linux的Windows子系统中的Ubuntu 20.04上安装panic](https://github.com/rust-lang/rustup/issues/2293)      
+  - [Unable to update - thread 'main' panicked at 'assertion failed: `(left == right)`](https://github.com/rust-lang/rustup/issues/2253)      
+  - [在WSL2（Windows10）的Ubuntu中构建Rust语言开发环境](https://koma.blog/wsl2-ubuntu-rust/)      
+
+  解决方法：  
+  - [1](https://github.com/rust-lang/rustup/issues/2293)      
 
 
 
