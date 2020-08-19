@@ -1,12 +1,30 @@
 {
-    "eslint.workingDirectories": [
-        {
-            "directory": "./node",
-            "changeProcessCWD": true
-        }
-    ],
-    "search.exclude": {
-        "**/target": true
+  "eslint.workingDirectories": [
+    {
+      "directory": "./node",
+      "changeProcessCWD": true
+    }
+  ],
+  "lldb.verboseLogging": true,
+  "code-runner.runInTerminal": true,
+  "vetur.format.defaultFormatterOptions": {
+    "prettier": {
+      "semi": false, //  不要分号分号
+      "singleQuote": true, //  要单引号
     },
-    "lldb.verboseLogging": true
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.detectIndentation": false,
+  "vetur.validation.template": false,
+  "editor.tabSize": 2,
+  "search.exclude": {
+    "**/dist": true,
+    "**/target": true
+  },
+  "files.watcherExclude": {
+    "**/dist/**": true
+  },
+  "eslint.alwaysShowStatus": true,
 }
