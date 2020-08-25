@@ -33,6 +33,7 @@
 - [手把手教你安装Linux虚拟机 - 知乎](https://zhuanlan.zhihu.com/p/41940739)
 - [VMWare workstation pro 和 player区别 - 1](https://blog.csdn.net/alada007/article/details/8205488)
 - [VMWare workstation pro 和 player区别 - 2](https://blog.csdn.net/butterflydog/article/details/5910509)
+- [**VMware安装Ubuntu（必会） - 知乎**](https://zhuanlan.zhihu.com/p/38797088)
 - [使用Win10内置虚拟机下载Ubuntu](https://cloud.tencent.com/developer/news/448568)
 - 如果无法下载Ubuntu或者下载速度过慢，可以试试 [中国科技大学国内镜像](http://mirrors.ustc.edu.cn/) 里搜索
 - ~~如果无法下载VMware或者下载速度过慢，可以试试 [腾讯软件中心]() 里搜索~~
