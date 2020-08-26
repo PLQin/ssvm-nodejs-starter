@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "node node/app.js",
-    "build": "ssvmup src/"
+    "build": "ssvmup build src/"
   },
   "repository": {
     "type": "git",
