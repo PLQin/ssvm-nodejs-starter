@@ -100,7 +100,7 @@ Q：Win10 Linux子系统运行命令 rust init，提示异常
 
   解决方法：  
   - use older linux versions  
-    2020年8月24日，大陆区微软商店中只有Ubuntu 20.04，而且降低版本的话也无法与本次课题推荐的版本不符了。  
+    2020年8月24日，大陆区微软商店中只有Ubuntu 20.04，而且降低版本的话也与本次课题推荐的版本不符了。  
   - some users report that exporting RUSTUP_IO_THREADS=1 mitigates the problem  
     使用这个命令，没有再提示异常，但再执行 `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh` 却不会有任何信息和进度展示  
   - use WSLv2  
