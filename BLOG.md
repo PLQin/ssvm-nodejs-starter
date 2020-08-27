@@ -5,7 +5,7 @@
 
 # Rust学习总结 - 写 Rust 函数，免费拿树莓派
 
-本次学习Rust真是从0开始，之前也没尝试过虚拟机；废话不多说，我们开始吧
+本次学习Rust从0开始，之前也没尝试过虚拟机，学习过程中很是掉头发；废话不多说，我们开始吧
 
 
 ## \# Rust 三问
@@ -109,10 +109,26 @@ Q：Win10 Linux子系统运行命令 rust init，提示异常
     更详细的安装/升级介绍可以查看微软官方文档——[Windows Linux子系统Windows 10安装指南](https://docs.microsoft.com/en-us/windows/wsl/install-win10)     
 
 Q：Win10 —— 您的主机不满足在启用 Hyper-V 或 Device/Credential Guard 的情况下运行 VMware Workstation 的最低要求。    
-  [解决办法](https://blog.csdn.net/qq_36761831/article/details/81175736)  
+  [解决办法](https://blog.csdn.net/qq_36761831/article/details/81175736)    
 
-Q：Ubuntu —— 通过 npm install -g ssvmup 添加了ssvmup，但是执行 ssvmup buil 系统又提示 :  You have not installed ssvmup。  
+Q：Ubuntu —— `sudo npm i -g ssvmup` 异常     
+  ```bash
+  > ssvmup@0.1.16 preuninstall /usr/local/lib/node_modules/ssvmup
+  > node ./uninstall.js
+  ```    
+  进入`node_modules/ssvmup`然后运行`node install.js`等待`ssvmup has been installed!`   
+
+Q：Ubuntu —— 通过 npm install -g ssvmup 添加了ssvmup，但是执行 ssvmup buil 系统又提示 :  `You have not installed ssvmup`。  
   其实需要在rust文件所在目录上运行，最后我将ssvmup安装在全局，并同时将ssvmup安装在单项目中，通过npm srcipt来运行ssvmup命令   
+
+Q：Ubuntu —— `ssvmup build` 失败      
+  ```bash 
+  [INFO]: Installing wasm-bindgen...
+  thread 'main' panicked at 'called `Result::unwrap()` on an `Err` value: Error { description: "Couldn\'t connect to server", code: 7, extra: None }', src/install/mod.rs:182:9
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  Well, this is embarrassing.
+  ```    
+  解决办法：[secondstate.io](https://www.secondstate.io/articles/faq-ssvmup-build-fail/)，就是需要科学上网（已和官方反馈，将会在近期发布一个国内镜像）    
 
 
 ## \# 总结
