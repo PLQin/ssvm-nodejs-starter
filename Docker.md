@@ -30,6 +30,18 @@
   $ docker info
   $ docker run hub.c.163.com/library/busybox:latest echo hello world # => 运行一个docker容器hello world  
   ```
+- 连接容器
+  ```
+  $ docker start 56b9cd5ffa87
+  $ docker attach 56b9cd5ffa87
+  ```
+- 使用指定镜像以交互模式启动一个容器，并在容器内执行/bin/bash命令     
+  ```
+  # https://www.runoob.com/docker/docker-run-command.html
+  $ docker pull ubuntu
+  $ docker run -it [IMAGE ID] /bin/bash
+  $ cat /etc/issue
+  ```
 
 
 ## \# [Windows下载并部署Docker](https://www.runoob.com/docker/windows-docker-install.html)  
@@ -37,21 +49,22 @@
 - 现在 Docker 有专门的 Win10 专业版系统的安装包，需要 [开启Hyper-V](https://www.runoob.com/docker/windows-docker-install.html)。   
 
 
-## \# 其他
+## \# 遇到的一些问题
+
+- `docker: Error response from daemon: create $(pwd)`  
+  见 https://github.com/second-state/ssvm-nodejs-starter/issues/14
+
+- 启动 `docker info` 时报错: `Error response from daemon: Bad response from Docker engine`
+  - https://developer.aliyun.com/article/636667
+  - https://github.com/docker/for-win/issues/1028
 
 - [windows 中的类似于sudo的命令（在cmd中以另一个用户的身份运行命令）](https://www.cnblogs.com/vanwoos/p/9866352.html)，例如我的Windows用户是Qing，则命令为：  
   ```shell
   runas /user:qing cmd.exe
-  ```  
+  ```    
+
 - 系统提示 `No def ault Boot2Docker IS0 found locally，downloading the latest release`     
   表示正在下载boot2docker.iso镜像文件，这个速度会非常慢，这时可以先按Ctrl+C取消安装，把boot2docker.iso文件通过迅雷等下载工具下载下来并放到指定目录（C:\Users\zsl-pc.docker\machine\cache\，此目录在不同电脑上会有所不同）下再安装。再次运行create创建Docker虚拟主机时就不会再去远程下载，而是使用本地的iso文件了。可参考：https://www.jianshu.com/p/f8bb86ff7650 。关于 [为什么需要用到boot2docker](https://www.cnblogs.com/52fhy/p/8413029.html)可以大概阅读下。  
-
-
-## \# 遇到的问题
-
-##### Q : 启动 `docker info` 时报错: `Error response from daemon: Bad response from Docker engine`
-- https://developer.aliyun.com/article/636667
-- https://github.com/docker/for-win/issues/1028
 
 
 ## \# 参考
