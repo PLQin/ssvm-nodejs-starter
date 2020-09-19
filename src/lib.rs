@@ -7,7 +7,7 @@ pub fn say(s: &str) -> String {
   return r + s;
 }
 
-pub fn main(s: &str) -> String {
+pub fn main() {
   let mut y: i32 = 1;
   while y < 10 {
     let mut x: i32 = 1;
