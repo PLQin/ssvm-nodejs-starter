@@ -24,83 +24,11 @@
   - 从零开始学习Docker的重要工具
   - 提供集中创建和管理Docker主机的功能
   - 与Docker Swarm集成创建Docker集群
-
-
-## \# Docker 安装   
-手动安装适合单机安装docker环境，无需搭建docker网络的情况。
-
-1. 卸载旧版本docker  
-> 全新安装时，无需执行该步骤    
-  ```shell
-  $ sudo apt-get remove docker docker-engine docker.io
-  ```
-
-2. 更新系统软件     
-  ```shell
-  $ sudo apt-get update
-  ```
-
-3. 安装依赖包    
-  ```shell
-  # $ which curl # 检查curl是否存在
-  # $ sudo apt-get install curl # 不存在则下载 
-
-  # http://linux-command.org/en/docker.html
-  # https://docs.docker.com/engine/install/ubuntu/
-  $ sudo apt-get install \
-      apt-transport-https \
-      ca-certificates \
-      curl \
-      software-properties-common
-  ```
-
-4. 添加官方密钥       
-执行该命令时，如遇到长时间没有响应说明网络连接不到docker网站，需要使用代-理进行。
-  ```shell
-  $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-  ```
-
-5. 添加仓库      
-  ```shell
-  $ sudo add-apt-repository \
-    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-    $(lsb_release -cs) \
-    stable"
-  ```
-
-6. 再次更新软件    
-  ```shell
-  $ sudo apt-get update
-  ```
-
-7. 安装docker  
-docke有两个版本:docker-ce(社区版)和docker-ee(企业版)。如果想指定安装某一版本，可使用 `sudo apt-get install docker-ce=<VERSION>` 命令，把 `<VERSION>` 替换为具体版本即可。  
-以下命令没有指定版本，默认就会安装最新版    
-  ```shell
-  $ sudo apt-get install docker-ce
-  ```
-
-8. 查看docker版本并测试docker     
+- 查看docker版本并测试docker     
   ```shell
   $ docker -v
   $ docker info
   $ docker run hub.c.163.com/library/busybox:latest echo hello world # => 运行一个docker容器hello world  
-  ```
-
-## \# Docker Compose安装
-1. 下载docker-compose    
-  ```shell
-  $ sudo curl -L https://github.com/docker/compose/releases/download/1.17.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
-  ```
-
-2. 授权     
-  ```shell
-  $ sudo chmod +x /usr/local/bin/docker-compose
-  ```
-
-3. 查看版本信息      
-  ```shell
-  $ docker-compose --version
   ```
 
 
@@ -122,8 +50,8 @@ docke有两个版本:docker-ce(社区版)和docker-ee(企业版)。如果想指�
 ## \# 遇到的问题
 
 ##### Q : 启动 `docker info` 时报错: `Error response from daemon: Bad response from Docker engine`
-> [讨论](https://developer.aliyun.com/article/636667)
-> [讨论](https://github.com/docker/for-win/issues/1028)
+- https://developer.aliyun.com/article/636667
+- https://github.com/docker/for-win/issues/1028
 
 
 ## \# 参考
