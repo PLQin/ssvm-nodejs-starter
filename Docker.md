@@ -19,6 +19,9 @@
   - Oracle VM VirtualBox：Oracle虚拟器（机）
   - Kitematic (Alpha)：Docker GUI 工具，它可以更快速、更简单的运行Docker
   - Docker Quickstart Terminal：快速启动docker的命令行工具
+- Docker 主机，镜像，容器的关系    
+  VM/宿主机 ——> 镜像image（包含完整的系统如linux（ubuntu）、mysql、apache、nginx等。镜像是由一层层的系统文件组成。）安装——> 创建容器 ——> 创建应用。    
+  容器是由镜像实例化而来。容器是基于镜像创建的，即容器中的进程依赖于镜像中的文件。   
 - [Docker Machine](https://docs.docker.com/machine/install-machine/)：
   - 创建和管理docker主机的工具，支持在不同版本的Linux上管理多个Docker主机
   - 从零开始学习Docker的重要工具
@@ -28,7 +31,7 @@
   ```shell
   $ docker -v
   $ docker info
-  $ docker run hub.c.163.com/library/busybox:latest echo hello world # => 运行一个docker容器hello world  
+  $ docker run hub.c.163.com/library/busybox:latest echo hello world # => 运行一个docker容器
   ```
 - 连接容器
   ```
