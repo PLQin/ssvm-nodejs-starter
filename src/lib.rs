@@ -8,7 +8,7 @@ use wasm_bindgen::prelude::*;
 // }
 
 #[wasm_bindgen]
-pub fn main() {
+pub fn say() {
   let mut y: i32 = 1;
   while y < 10 {
     let mut x: i32 = 1;
